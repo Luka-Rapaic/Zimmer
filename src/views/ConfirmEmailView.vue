@@ -3,20 +3,16 @@ import {useRouter} from 'vue-router';
 
 const router = useRouter();
 
-function login() {
-  router.push('/profile');
+function confirm() {
+  router.push('/login');
 }
 </script>
 
 <template>
   <div>
-    <label for="email">Email</label>
-    <input id="email">
-
-    <label for="password">Password</label>
-    <input id="password">
-
-    <button @click="login">Submit</button>
+    <label id="confirm-code">Confirm code</label>
+    <input id="confirm-code" type="text" name="confirm-code"/>
+    <button @click="confirm">Confirm</button>
   </div>
 </template>
 

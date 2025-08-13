@@ -9,14 +9,29 @@ const router = createRouter({
       component: () => import('../views/RegisterView.vue')
     },
     {
+      path: '/confirm-email',
+      name: 'confirm-email',
+      component: () => import('../views/ConfirmEmailView.vue')
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LogInView.vue')
     },
     {
+      path: '/create-profile',
+      name: 'create-profile',
+      component: () => import('../views/CreateProfileView.vue')
+    },
+    {
       path: '/profile',
       name: 'profile',
       component: () => import('../views/ProfileView.vue')
+    },
+    {
+      path: '/profile-card',
+      name: 'profile-card',
+      component: () => import('../views/ProfileCardView.vue')
     }
   ],
 })
