@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Sora;
+  src: url('/src/assets/fonts/Sora-VariableFont_wght.ttf');
+  font-weight: 100 900;
+}
+
+body {
+  font-family: Sora;
+}
